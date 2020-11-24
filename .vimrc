@@ -1,5 +1,31 @@
 " Config Vim
 
+" Basic configs
+syntax on
+filetype on
+set encoding=utf-8
+set number
+set ai
+set hlsearch
+set ruler
+set clipboard+=unnamed 
+set showmatch
+highlight Comment ctermfg=green
+
+" PEP8 indentation for Python
+au BufNewFile,BufRead *.py
+    \ set tabstop=4
+    \ set softtabstop=4
+    \ set shiftwidth=4
+    \ set textwidth=79
+    \ set expandtab
+    \ set autoindent
+    \ set fileformat=unix
+
+" Keybindings
+inoremap jk <ESC>
+map <F2> :NERDTreeToggle<CR>
+
 " Plugins
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
@@ -14,19 +40,7 @@ Plugin 'preservim/nerdtree'
 call vundle#end()            " required
 filetype plugin indent on    " required
 
-" Basic configs
-set encoding=utf-8
-syntax on
-set number
-set ai
-set hlsearch
-set ruler
-highlight Comment ctermfg=green
-filetype on
-set clipboard+=unnamed 
-set showmatch
-
-" Plugins
+" Plugins config
 let jedi#show_call_signatures = 0
 let jedi#documentation_command = ""
 
@@ -35,7 +49,3 @@ let g:jedi#goto_command = "<C-LeftMouse>"
 map <C-b> <C-LeftMouse>
 
 let NERDTreeIgnore=['\.pyc$', '\~$', '__pycache__'] "ignore files in NERDTree
-
-" Keybindings
-inoremap jk <ESC>
-map <F2> :NERDTreeToggle<CR>
