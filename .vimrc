@@ -2,7 +2,6 @@
 
 filetype plugin indent on
 set encoding=utf-8
-set clipboard=unnamedplus
 syntax on
 set number
 set ai
@@ -10,6 +9,7 @@ set hlsearch
 set ruler
 highlight Comment ctermfg=green
 filetype on
+set clipboard+=unnamed 
 
 " Plugins
 
