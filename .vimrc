@@ -23,7 +23,7 @@ au BufNewFile,BufRead *.py
     \ set fileformat=unix
 
 " Keybindings
-inoremap jk <ESC>
+inoremap jj <ESC>
 map <F2> :NERDTreeToggle<CR>
 
 " Plugins
@@ -35,6 +35,7 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'davidhalter/jedi-vim'
 Plugin 'preservim/nerdtree'
+Plugin 'junegunn/fzf'
 Plugin 'junegunn/fzf.vim'
 
 " All of your Plugins must be added before the following line
@@ -44,6 +45,7 @@ filetype plugin indent on    " required
 " Plugins config
 let jedi#show_call_signatures = 0
 let jedi#documentation_command = ""
+let g:jedi#use_tabs_not_buffers = 1
 
 set mouse=a
 let g:jedi#goto_command = "<C-LeftMouse>"

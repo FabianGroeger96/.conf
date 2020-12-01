@@ -113,3 +113,5 @@ alias home="cd ~"
 alias dgit="cd ~/Documents/_git/"
 alias dyodel="cd ~/Documents/_git/HSLU/artificial_yodel/music_embedding/"
 
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
