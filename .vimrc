@@ -60,7 +60,8 @@ let g:NERDCreateDefaultMappings = 1
 let g:NERDCompactSexyComs = 1
 
 " Python
-au BufNewFile *.py 0r ~/.vim/skeleton.py " skeleton for new .py files
+" skeleton for new .py files
+au BufNewFile *.py 0r ~/.conf/skeleton.py
 
 " Enable all Python syntax highlighting features
 let python_highlight_all = 1
