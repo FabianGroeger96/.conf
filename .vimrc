@@ -11,9 +11,6 @@ set hlsearch
 set ruler
 set clipboard+=unnamed
 set showmatch
-set tabstop=2
-set shiftwidth=2
-set expandtab
 
 " Theme options
 colorscheme onedark
@@ -52,7 +49,7 @@ let g:pymode_options_colorcolumn = 0
 let g:pymode_motion = 1
 let g:pymode_indent = 1
 let g:pymode_breakpoint = 1
-let g:pymode_breakpoint_cmd = 'import pdb; pdp.set_trace()'
+let g:pymode_breakpoint_cmd = 'import pdb; pdb.set_trace()'
 let g:pymode_lint = 1
 let g:ycm_show_diagnostics_ui = 1
 let g:pymode_folding = 0
