@@ -2,7 +2,7 @@
 export EDITOR='vim'
 
 export CLICOLOR=1
-export PS1="fabiangroeger\[\e[31m\] \[\e[m\]\[\e[31m\]:\[\e[m\]\[\e[31m\]:\[\e[m\] \[\e[32m\]\w\[\e[m\] \[\e[34m\]»\[\e[m\] "
+export PS1="\[\e[m\] \[\e[32m\]\w\[\e[m\] \[\e[34m\]»\[\e[m\] "
 
 export LSCOLORS=cxgxfxexbxegedabagacad
 alias ls='ls --color'
