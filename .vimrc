@@ -1,10 +1,4 @@
 " Config Vim
-" Theme options
-set t_Co=256
-colorscheme onedark
-let g:onedark_hide_endofbuffer = 1
-let g:onedark_termcolors = 256
-let g:onedark_terminal_italics = 0
 
 " Basic configs
 syntax on
@@ -17,7 +11,15 @@ set hlsearch
 set ruler
 set clipboard+=unnamed
 set showmatch
-highlight Comment ctermfg=green
+set tabstop=2
+set shiftwidth=2
+set expandtab
+
+" Theme options
+colorscheme onedark
+let g:onedark_hide_endofbuffer = 1
+let g:onedark_termcolors = 256
+let g:onedark_terminal_italics = 0
 
 " Keybindings
 inoremap jj <ESC>
@@ -37,7 +39,6 @@ Plugin 'preservim/nerdcommenter'
 Plugin 'python-mode/python-mode'
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'joshdick/onedark.vim'
-Plugin 'sheerun/vim-polyglot'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -71,6 +72,3 @@ let g:NERDCompactSexyComs = 1
 " Python
 " skeleton for new .py files
 au BufNewFile *.py 0r ~/.conf/skeleton.py
-
-" Enable all Python syntax highlighting features
-let python_highlight_all = 1

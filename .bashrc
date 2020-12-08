@@ -1,6 +1,12 @@
 # Editor configuration
 export EDITOR='vim'
-export PS1='\[\033[1;32m\]\u\[\033[1;32m\]@\[\033[1;32m\]\h:\[\033[1;35m\]\w\[\033[1;34m\]\$\[\033[0m\] '
+
+export CLICOLOR=1
+export PS1="fabiangroeger\[\e[31m\] \[\e[m\]\[\e[31m\]:\[\e[m\]\[\e[31m\]:\[\e[m\] \[\e[32m\]\w\[\e[m\] \[\e[34m\]»\[\e[m\] "
+
+export LSCOLORS=cxgxfxexbxegedabagacad
+alias ls='ls --color'
+alias ls='ls -G'
 
 # Alias Filepaths
 alias home="cd ~"
