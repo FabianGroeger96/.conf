@@ -1,4 +1,10 @@
 " Config Vim
+" Theme options
+set t_Co=256
+colorscheme onedark
+let g:onedark_hide_endofbuffer = 1
+let g:onedark_termcolors = 256
+let g:onedark_terminal_italics = 0
 
 " Basic configs
 syntax on
@@ -15,7 +21,7 @@ highlight Comment ctermfg=green
 
 " Keybindings
 inoremap jj <ESC>
-map <F2> :NERDTreeToggle<CR>
+map <C-n> :NERDTreeToggle<CR>
 
 " Plugins
 " set the runtime path to include Vundle and initialize
@@ -30,6 +36,8 @@ Plugin 'junegunn/fzf.vim'
 Plugin 'preservim/nerdcommenter'
 Plugin 'python-mode/python-mode'
 Plugin 'Valloric/YouCompleteMe'
+Plugin 'joshdick/onedark.vim'
+Plugin 'sheerun/vim-polyglot'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required

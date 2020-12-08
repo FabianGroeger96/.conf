@@ -16,3 +16,4 @@ if ! shopt -oq posix; then
     . /etc/bash_completion
   fi
 fi
+force_color_prompt=yes
