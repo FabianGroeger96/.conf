@@ -54,6 +54,7 @@ let g:pymode_breakpoint = 1
 let g:pymode_breakpoint_cmd = 'import pdb; pdp.set_trace()'
 let g:pymode_lint = 1
 let g:ycm_show_diagnostics_ui = 1
+let g:pymode_folding = 0
 
 set mouse=a
 let g:jedi#goto_command = "<C-LeftMouse>"
