@@ -68,6 +68,7 @@ let NERDTreeIgnore=['\.pyc$', '\~$', '__pycache__'] "ignore files in NERDTree
 
 " Create default mappings
 let g:NERDCreateDefaultMappings = 1
+let NERDTreeShowHidden=1
 
 " Use compact syntax for prettified multi-line comments
 let g:NERDCompactSexyComs = 1
