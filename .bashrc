@@ -16,6 +16,11 @@ alias dyodel="cd ~/Documents/_git/HSLU/artificial_yodel/music_embedding/"
 alias dgithub='cd ~/Documents/_git/GitHub/'
 alias ll="ls -al"
 
+# Alias ssh
+alias gpu02='ssh fgroger@gpu02.res.el.eee.intern'
+alias hslu_vm='ssh fgroger@personal-grf.res.el.eee.intern'
+alias swarm_vm='ssh fgroger@abiz-qaswarm-mng02.res.el.eee.intern'
+
 # Esthetics
 export GREP_OPTIONS=' — color=auto'
 if ! shopt -oq posix; then
