@@ -110,8 +110,9 @@ export TERM=xterm-256color
 
 # Alias Filepaths
 alias home="cd ~"
+alias dconfig='cd ~/.conf/'
 alias dgit="cd ~/Documents/_git/"
 alias dyodel="cd ~/Documents/_git/HSLU/artificial_yodel/music_embedding/"
-
+alias dgithub='cd ~/Documents/_git/GitHub/'
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh

@@ -10,8 +10,11 @@ alias ls='ls -G'
 
 # Alias Filepaths
 alias home="cd ~"
+alias dconfig='cd ~/.conf/'
 alias dgit="cd ~/Documents/_git/"
 alias dyodel="cd ~/Documents/_git/HSLU/artificial_yodel/music_embedding/"
+alias dgithub='cd ~/Documents/_git/GitHub/'
+alias ll="ls -al"
 
 # Esthetics
 export GREP_OPTIONS=' — color=auto'
