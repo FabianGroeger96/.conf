@@ -11,6 +11,7 @@ set hlsearch
 set ruler
 set clipboard+=unnamed
 set showmatch
+set backspace=2 " make backspace work like most other programs
 
 " Theme options
 colorscheme onedark
