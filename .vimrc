@@ -12,6 +12,7 @@ set ruler
 set clipboard+=unnamed
 set showmatch
 set backspace=2 " make backspace work like most other programs
+set noshowmode
 
 " Theme options
 colorscheme onedark
@@ -43,6 +44,7 @@ Plugin 'preservim/nerdcommenter'
 Plugin 'python-mode/python-mode'
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'joshdick/onedark.vim'
+Plugin 'itchyny/lightline.vim'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -73,6 +75,12 @@ let NERDTreeShowHidden=1
 
 " Use compact syntax for prettified multi-line comments
 let g:NERDCompactSexyComs = 1
+
+" statusbar
+set laststatus=2
+let g:lightline = {
+      \ 'colorscheme': 'wombat',
+      \ }
 
 " Python
 " skeleton for new .py files
