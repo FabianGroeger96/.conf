@@ -45,6 +45,7 @@ Plugin 'python-mode/python-mode'
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'joshdick/onedark.vim'
 Plugin 'itchyny/lightline.vim'
+Plugin 'heavenshell/vim-pydocstring'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -81,6 +82,10 @@ set laststatus=2
 let g:lightline = {
       \ 'colorscheme': 'wombat',
       \ }
+
+" Docstring
+let g:pydocstring_formatter = 'sphinx'
+let g:pydocstring_doq_path = '/home/fabian/.local/bin/doq'
 
 " Python
 " skeleton for new .py files
