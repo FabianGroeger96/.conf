@@ -35,3 +35,6 @@ if ! shopt -oq posix; then
   fi
 fi
 force_color_prompt=yes
+
+# fzf
+[ -f ~/.fzf.bash ] && source ~/.fzf.bash

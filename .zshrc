@@ -114,6 +114,7 @@ alias dconfig='cd ~/.conf/'
 alias dgit="cd ~/Documents/_git/"
 alias dyodel="cd ~/Documents/_git/HSLU/artificial_yodel/music_embedding/"
 alias dgithub='cd ~/Documents/_git/GitHub/'
+alias dbrain='cd ~/Dropbox/Obsidian/Second\ Brain/'
 
 # Alias ssh
 alias gpu02='ssh fgroger@gpu02.res.el.eee.intern'

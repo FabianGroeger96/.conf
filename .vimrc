@@ -38,7 +38,7 @@ call vundle#begin()
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'preservim/nerdtree'
-Plugin 'junegunn/fzf'
+Plugin 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plugin 'junegunn/fzf.vim'
 Plugin 'preservim/nerdcommenter'
 Plugin 'python-mode/python-mode'
@@ -86,6 +86,9 @@ let g:lightline = {
 " Docstring
 let g:pydocstring_formatter = 'sphinx'
 let g:pydocstring_doq_path = '/home/fabian/.local/bin/doq'
+
+" HTML configs
+autocmd BufRead,BufNewFile *.htm,*.html,*.js setlocal tabstop=4 shiftwidth=4 softtabstop=4
 
 " Python
 " skeleton for new .py files
