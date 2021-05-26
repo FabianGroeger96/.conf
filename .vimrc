@@ -88,7 +88,7 @@ let g:pydocstring_formatter = 'sphinx'
 let g:pydocstring_doq_path = '/home/fabian/.local/bin/doq'
 
 " HTML configs
-autocmd BufRead,BufNewFile *.htm,*.html,*.js setlocal tabstop=4 shiftwidth=4 softtabstop=4
+autocmd BufRead,BufNewFile *.htm,*.html,*.js,*.css setlocal tabstop=4 shiftwidth=4 softtabstop=4
 
 " Python
 " skeleton for new .py files
