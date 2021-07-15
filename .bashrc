@@ -27,7 +27,8 @@ alias swarm_vm='ssh fgroger@abiz-qaswarm-mng02.res.el.eee.intern'
 alias open='xdg-open'
 
 # Esthetics
-export GREP_OPTIONS=' — color=auto'
+# export GREP_OPTIONS=' — color=auto'
+# alias grep='grep --color=auto'
 if ! shopt -oq posix; then
   if [ -f /usr/share/bash-completion/bash_completion ]; then
     . /usr/share/bash-completion/bash_completion

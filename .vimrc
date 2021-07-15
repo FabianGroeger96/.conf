@@ -9,10 +9,14 @@ set number
 set ai
 set hlsearch
 set ruler
-set clipboard+=unnamed
+set clipboard=unnamed " clipboard
+set clipboard=unnamedplus " clipboard
 set showmatch
 set backspace=2 " make backspace work like most other programs
 set noshowmode
+" relative line numbers
+set number relativenumber
+set nu rnu
 
 " Theme options
 colorscheme onedark
@@ -46,6 +50,7 @@ Plugin 'Valloric/YouCompleteMe'
 Plugin 'joshdick/onedark.vim'
 Plugin 'itchyny/lightline.vim'
 Plugin 'heavenshell/vim-pydocstring'
+Plugin 'editorconfig/editorconfig-vim'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -63,6 +68,7 @@ let g:pymode_breakpoint_cmd = 'import pdb; pdb.set_trace()'
 let g:pymode_lint = 1
 let g:ycm_show_diagnostics_ui = 1
 let g:pymode_folding = 0
+let g:pymode_options_max_line_length = 120
 
 set mouse=a
 let g:jedi#goto_command = "<C-LeftMouse>"
@@ -86,6 +92,7 @@ let g:lightline = {
 " Docstring
 let g:pydocstring_formatter = 'sphinx'
 let g:pydocstring_doq_path = '/home/fabian/.local/bin/doq'
+nmap <silent> <C-w> <Plug>(pydocstring)
 
 " HTML configs
 autocmd BufRead,BufNewFile *.htm,*.html,*.js,*.css setlocal tabstop=4 shiftwidth=4 softtabstop=4
