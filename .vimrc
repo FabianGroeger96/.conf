@@ -82,6 +82,9 @@ let NERDTreeShowHidden=1
 " Use compact syntax for prettified multi-line comments
 let g:NERDCompactSexyComs = 1
 
+" fzf
+nnoremap <C-p> :GFiles<CR>
+
 " statusbar
 set laststatus=2
 let g:lightline = {
