@@ -8,6 +8,9 @@ export LSCOLORS=cxgxfxexbxegedabagacad
 alias ls='ls --color'
 alias ls='ls -G'
 
+# NeoVim as default instead of VIM
+alias vi="nvim"
+
 # Alias Filepaths
 alias home="cd ~"
 alias dconfig='cd ~/.conf/'
