@@ -18,7 +18,9 @@ set number relativenumber
 set nu rnu
 
 " Theme options
-colorscheme onedark
+colorscheme gruvbox
+set background=dark
+" Theme options for onedark
 let g:onedark_hide_endofbuffer = 1
 let g:onedark_termcolors = 256
 let g:onedark_terminal_italics = 0
@@ -47,7 +49,9 @@ Plugin 'preservim/nerdcommenter'
 Plugin 'python-mode/python-mode'
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'joshdick/onedark.vim'
+Plugin 'morhetz/gruvbox'
 Plugin 'itchyny/lightline.vim'
+Plugin 'shinchu/lightline-gruvbox.vim'
 Plugin 'heavenshell/vim-pydocstring'
 Plugin 'editorconfig/editorconfig-vim'
 
@@ -87,9 +91,8 @@ nnoremap <C-p> :GFiles<CR>
 
 " statusbar
 set laststatus=2
-let g:lightline = {
-      \ 'colorscheme': 'wombat',
-      \ }
+let g:lightline = {}
+let g:lightline.colorscheme = 'gruvbox'
 
 " Docstring
 let g:pydocstring_formatter = 'sphinx'
